@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.navbar {
+    height: 70px;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_logo {
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.navbar_items {
+    display: flex;
+}
+
+.navbar_items li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.navbar_contact {
+    display: flex;
+}
+
+.navbar_contact li {
+    margin: 0 30px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.navbar_contact li:nth-child(1)::after {
+    content: url('../../../../assets/img/github.svg') ;
+    filter: invert(1);
+    display:block;
+    position:absolute;
+    left: -25px;
+    top: 0px;
+}
+
+.navbar_contact li:nth-child(2)::after {
+    content: url('../../../../assets/img/linkedin.svg') ;
+    filter: invert(1);
+    display:block;
+    position:absolute;
+    left: -25px;
+    top: 0px;
+}
+
+.navbar_contact li:nth-child(3) a::after {
+    content: url('../../../../assets/img/gmail.svg') ;
+    filter: invert(1);
+    display:block;
+    position:absolute;
+    left: -25px;
+    top: 0px;
+}
+
+.navbar_contact li a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebarMenu {
+    position: absolute;
+    right: 10px;
+    top: 75px;
+    /* background-color: rgb(51, 51, 51); */
+    width: 200px;
+    height: 100vh;
+    z-index: 999;
+    padding-left: 1rem;
+}
+
+.btnMenu {
+    background: none;
+    border: 0;
+    display: none;
+    position: relative;
+    top: -5px;
+}
+
+.btnMenu img {
+    width: 25px;
+}
+
+@media screen and (max-width: 900px) { 
+    .navbar_contact {
+        display: none;
+    }
+    .navbar_items {
+        display: none;
+    }
+
+    .btnMenu {
+        display: flex;
+    }
+}

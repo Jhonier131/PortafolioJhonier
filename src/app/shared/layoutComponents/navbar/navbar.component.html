@@ -1,0 +1,40 @@
+<div class="navbar">
+
+    <p class="navbar_logo">JMY</p>
+
+    <ul class="navbar_items">
+        <li style="color: #13cd4a;">< Home ></li>
+        <li>About me</li>
+        <li>Proyects</li>
+    </ul>
+
+    <ul class="navbar_contact">
+        <li><a href="https://github.com/Jhonier131/RickAndMorty" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jhonier-martinez-yela-07810b233/" target="_blank">Linkedin</a></li>
+        <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCBBJFwsqFPVWzWFrqJrtZXgcptPzjMHGqhGhVrlXvjlxgjrmvzsfZWZjsvSkGpWVGkcQq" target="_blank"></a></li>
+    </ul>
+
+    <button class="btnMenu" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <img src="../../../../assets/img/menu.svg" alt="Menu">
+    </button>
+    <mat-menu #menu="matMenu" class="matMenu">
+        <button mat-menu-item>
+        <span>Home</span>
+        </button>
+        <button mat-menu-item>
+        <span>About me</span>
+        </button>
+        <button mat-menu-item>
+        <span>Proyects</span>
+      </button>
+    </mat-menu>
+
+    <!-- <div class="sidebarMenu">
+        <ul class="sidebar_items">
+            <li>< Home ></li>
+            <li>About me</li>
+            <li>Proyects</li>
+        </ul>
+    </div> -->
+
+</div>

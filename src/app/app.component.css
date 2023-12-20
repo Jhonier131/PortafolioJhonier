@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+.home_background {
+    /* background-color: #33454e; */
+    /* background-color: #142738; */
+    /* background-color: #212529; */
+    background-color: #1c1f22;
+    height: 100vh;
+}
+
+.home_aboutMe {
+    background-color: #212529;
+    height: 100vh;
+    width: 100%;
+}
+
+.home_proyects {
+    background-color: #1c1f22;
+    height: 100vh;
+    width: 100%;
+}

@@ -1,0 +1,26 @@
+<div class="proyects">
+
+    <div class="proyects_card">
+
+        <div class="proyects_info">
+            <h1>Proyect name</h1>
+            <p>{{proyects.description}}</p>
+        </div>
+
+        <div class="proyects_img">
+            
+            <div class="proyects_navbar">
+                <ul>
+                    <li (click)="changeProyect('RM')">Rick and morty</li>
+                    <li (click)="changeProyect('PT')">Playtech</li>
+                </ul>
+            </div>
+            
+            <div class="proyects_imgContainer">
+                <img src="{{proyects.img}}" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</div>
